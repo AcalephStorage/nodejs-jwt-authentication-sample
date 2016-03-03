@@ -16,6 +16,10 @@ import (
   "github.com/dgrijalva/jwt-go"
 )
 
+const (
+  SECRET_FILE = "./secret"
+)
+
 func main() {
   var server1Url *url.URL
   var err error
@@ -42,7 +46,7 @@ func getToken() string {
 }
 
 func getSecret() string {
-  secret, _ := ioutil.ReadFile("/.secret")
+  secret, _ := ioutil.ReadFile(SECRET_FILE)
   return string(secret)
 }
 
