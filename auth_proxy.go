@@ -17,7 +17,7 @@ import (
 )
 
 const (
-  SECRET_FILE = "./secret"
+  SECRET_FILE = "/.secret"
 )
 
 func main() {
