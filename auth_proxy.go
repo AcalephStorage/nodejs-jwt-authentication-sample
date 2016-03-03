@@ -42,7 +42,7 @@ func getToken() string {
 }
 
 func getSecret() string {
-  secret, _ := ioutil.ReadFile("/path/to/secret")
+  secret, _ := ioutil.ReadFile("/.secret")
   return string(secret)
 }
 
